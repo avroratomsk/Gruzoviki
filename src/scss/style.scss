@@ -3,6 +3,7 @@
 // Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap-grid';
 
+
 // Шрифты
 // Удалить файл fonts.scss, если произошли какие-то изменения со шрифтами
 @import 'fonts';
@@ -12,14 +13,36 @@
 
 @import '_header';
 @import '_footer';
+@import '_catalog-home';
 
 * {
   outline: none;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   height: 100%;
+}
+
+ul,ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+
+}
+
+button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -31,8 +54,16 @@ body {
   min-width: 360px;
   overflow-x: hidden;
   font-family: $main_font;
+  color: $main;
   main {
     flex: 1 0 auto;
     padding: 30px 0;
   }
+}
+
+.container {
+  @media screen and (min-width: 1200px) {
+    max-width: 1658px !important;
+  }
+
 }
