@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head lang="ru">
+  <meta charset="UTF-8"/>
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Сборка GULP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250513175226"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css?_v=20250513175226"/>
+  <link
+    rel="stylesheet"
+    href="css/style.min.css?_v=20250513175226"
+  />
+
+  <!-- https://realfavicongenerator.net -->
+  <link
+    rel="icon"
+    type="image/png"
+    href="/img/favicon/favicon-96x96.png"
+    sizes="96x96"
+  />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="/img/favicon/favicon.svg"
+  />
+  <link
+    rel="shortcut icon"
+    href="/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/img/favicon/apple-touch-icon.png"
+  />
+  <meta
+    name="apple-mobile-web-app-title"
+    content="Ometov Gulp"
+  />
+  <link
+    rel="manifest"
+    href="/img/favicon/site.webmanifest"
+  />
+</head>
+
+    <body>
+        <div class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+      </a>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link">Каталог</a>
+<!--            <i class="fa-solid fa-chevron-down"></i>-->
+          </li>
+          <li class="nav__item"><a href="" class="nav__link">О компании</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Владельцам</a>
+<!--            <i class="fa-solid fa-chevron-down"></i>-->
+          </li>
+          <li class="nav__item"><a href="" class="nav__link">Акции</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Новости</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <div class="header__socials socials">
+          <a href=""><picture><source srcset="img/wh.webp" type="image/webp"><img src="img/wh.png" alt=""></picture></a>
+          <a href=""><picture><source srcset="img/vk.webp" type="image/webp"><img src="img/vk.png" alt=""></picture></a>
+          <a href=""><picture><source srcset="img/tg.webp" type="image/webp"><img src="img/tg.png" alt=""></picture></a>
+        </div>
+        <div class="header__info">
+          <button type="button" class="header__search-btn"><picture><source srcset="img/search.webp" type="image/webp"><img src="img/search.png" alt=""></picture></button>
+        </div>
+        <div class="header__text">
+          <p class=""><span>Адрес:</span>г.Владивосток, ул. Выселковая, д.30, стр.10</p>
+          <p class=""><span>Телефон:</span><a href="">+7 (984) 199-20-99 <picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt=""></picture></a></p>
+          <p class=""><span>E-mail:</span><a href="">isuzu-dv@mail.ru <picture><source srcset="img/mail.webp" type="image/webp"><img src="img/mail.png" alt=""></picture></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <main>
+            <div class="truck">
+  <div class="container">
+    <h1 class="truck__title title">Sollers TR50</h1>
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__item">Главная</a></li>
+        <li class="breadcrumbs__separator">
+          <picture><source srcset="img/arrow-breadcrumbs.webp" type="image/webp"><img src="img/arrow-breadcrumbs.png" alt=""></picture>
+        </li>
+        <li class="breadcrumbs__item">
+          <span>Мотоциклы</span>
+        </li>
+      </ul>
+    </div>
+    <div class="truck__row">
+      <div class="truck__left">
+        <!-- Навигация по разделам -->
+        <nav class="truck__nav">
+          <ul class="truck__nav-list">
+            <li class="truck__nav-item _active">Технические характеристики</li>
+            <li class="truck__nav-item">Двигатель и управление</li>
+            <li class="truck__nav-item">Комфорт</li>
+          </ul>
+          <div class="active-element" id="active-element"></div>
+        </nav>
+        <!-- Кнопка-брошюра -->
+        <a href="" class="truck__brochure" target="_blank">Брошюра</a>
+        <!-- Галерея -->
+        <div class="truck__image">
+          <picture><source srcset="img/truck.webp" type="image/webp"><img src="img/truck.png" alt="Sollers TR50"></picture>
+        </div>
+        <!-- Кнопки CTA -->
+        <div class="truck__cta">
+          <button class="truck__cta-button">Связаться с дилером</button>
+          <button class="truck__cta-button truck__cta-button--white">Оставить заявку</button>
+        </div>
+      </div>
+      <div class="truck__right">
+        <!-- Переключатель колесной базы -->
+        <div class="truck__wheelbase wheelbase">
+          <div class="wheelbase__options">
+            <button class="wheelbase__option _active">2800</button>
+            <button class="wheelbase__option">3360</button>
+            <button class="wheelbase__option">3600</button>
+            <button class="wheelbase__option">4000</button>
+          </div>
+          <div class="wheelbase__label">Колёсная база, мм</div>
+        </div>
+
+        <!-- Характеристики -->
+        <div class="truck__specs specs">
+
+          <!-- Основные характеристики -->
+          <section class="specs__block specs__block--main">
+            <h3 class="specs__title">ОСНОВНЫЕ ХАРАКТЕРИСТИКИ</h3>
+            <div class="specs__row-inner">
+              <div class="specs__row">
+                <div class="specs__item"><strong>5 320</strong><br>Общая длина, мм</div>
+                <div class="specs__item"><strong>1 995</strong><br>Общая ширина, мм</div>
+                <div class="specs__item"><strong>2 330</strong><br>Общая высота, мм</div>
+              </div>
+              <div class="specs__row">
+                <div class="specs__item"><strong>5 000</strong><br>Полная масса, кг</div>
+                <div class="specs__item"><strong>2 380</strong><br>Грузоподъёмность, кг</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Грузовой отсек -->
+          <section class="specs__block specs__block--cargo">
+            <h3 class="specs__title">ГРУЗОВОЙ ОТСЕК</h3>
+            <div class="specs__row-inner">
+              <div class="specs__row">
+                <div class="specs__item"><strong>3 800</strong><br>Длина надстройки, мм</div>
+                <div class="specs__item"><strong>2 200</strong><br>Ширина надстройки, мм</div>
+                <div class="specs__item"><strong>2 200</strong><br>Высота надстройки, мм</div>
+              </div>
+              <div class="specs__row">
+                <div class="specs__item"><strong>16,4</strong><br>Объём грузового отсека, м³</div>
+                <div class="specs__item"><strong>6</strong><br>Палеты</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Вместимость -->
+          <section class="specs__block specs__block--capacity">
+            <h3 class="specs__title">ВМЕСТИМОСТЬ</h3>
+            <p class="specs__text">Однорядная 3-х местная кабина,<br> без спального места.</p>
+          </section>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</div>
+        </main>
+
+        <div class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__row">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <picture><source srcset="img/footer-logo.webp" type="image/webp"><img src="img/footer-logo.png" alt=""></picture>
+          </div>
+        </div>
+        <div class="footer__col">
+          <nav class="footer__nav nav-footer">
+            <div class="nav-footer__inner">
+              <p class="nav-footer__title">О компании</p>
+              <ul class="nav-footer__list">
+                <li class="nav-footer__item"><a href="" class="nav-footer__link">О Дилерском центре</a></li>
+                <li class="nav-footer__item"><a href="" class="nav-footer__link">О бренде SOLLERS</a></li>
+                <li class="nav-footer__item"><a href="" class="nav-footer__link">Новости</a></li>
+                <li class="nav-footer__item"><a href="" class="nav-footer__link">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="nav-footer__inner">
+              <p class="nav-footer__title">Каталог</p>
+              <ul class="nav-footer__list">
+                <li class="nav-footer__item"><a href="" class="nav-footer__link">SOLLERS TR50</a></li>
+                <li class="nav-footer__item"><a href="" class="nav-footer__link">SOLLERS TR80</a></li>
+                <li class="nav-footer__item"><a href="" class="nav-footer__link">SOLLERS TR120</a></li>
+                <li class="nav-footer__item"><a href="" class="nav-footer__link">SOLLERS TR180</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <div class="footer__info">
+            <div class="footer__address">
+              <p>Адрес: г.Город</p>
+              <p>Телефон: <a href="">+7 (495) 230-11-11</a></p>
+              <p>E-mail: <a href="">gruzoviki@sollers.ru</a></p>
+            </div>
+            <div class="socials">
+              <a href=""><picture><source srcset="img/wh.webp" type="image/webp"><img src="img/wh.png" alt=""></picture></a>
+              <a href=""><picture><source srcset="img/vk.webp" type="image/webp"><img src="img/vk.png" alt=""></picture></a>
+              <a href=""><picture><source srcset="img/tg.webp" type="image/webp"><img src="img/tg.png" alt=""></picture></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copyright">© 2025 ООО "Sollers"</div>
+      <div class="footer__author">
+        Сайт разработан - <a href="">РА Аврора</a>
+      </div>
+      <a href="" class="footer__privacy">Политика конфиденциальности</a>
+    </div>
+  </div>
+</div>
+
+        <script src="js/app.min.js?_v=20250513175226"></script>
+    </body>
+</html>

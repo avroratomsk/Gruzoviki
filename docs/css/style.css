@@ -2087,6 +2087,223 @@ template {
   color: #000000;
 }
 
+.truck__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.truck__nav {
+  margin-bottom: 26px;
+  position: relative;
+}
+
+.truck__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.truck__nav-item {
+  color: rgb(64, 64, 64);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  cursor: pointer;
+}
+
+.truck__nav-item._active {
+  color: rgb(0, 0, 0);
+}
+
+.truck__brochure {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(244, 124, 48);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(248, 124, 48, 0.15), 0px 3px 3px 0px rgba(248, 124, 48, 0.13), 0px 8px 5px 0px rgba(248, 124, 48, 0.08), 0px 14px 5px 0px rgba(248, 124, 48, 0.02), 0px 21px 6px 0px rgba(248, 124, 48, 0);
+          box-shadow: 0px 1px 2px 0px rgba(248, 124, 48, 0.15), 0px 3px 3px 0px rgba(248, 124, 48, 0.13), 0px 8px 5px 0px rgba(248, 124, 48, 0.08), 0px 14px 5px 0px rgba(248, 124, 48, 0.02), 0px 21px 6px 0px rgba(248, 124, 48, 0);
+  background: rgb(244, 124, 48);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.truck__image {
+  max-width: 900px;
+}
+
+.truck__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.truck__cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 19px;
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 9px 0px rgba(92, 92, 92, 0.15), 0px 16px 16px 0px rgba(92, 92, 92, 0.13), 0px 37px 22px 0px rgba(92, 92, 92, 0.08), 0px 65px 26px 0px rgba(92, 92, 92, 0.02), 0px 101px 28px 0px rgba(92, 92, 92, 0);
+          box-shadow: 0px 4px 9px 0px rgba(92, 92, 92, 0.15), 0px 16px 16px 0px rgba(92, 92, 92, 0.13), 0px 37px 22px 0px rgba(92, 92, 92, 0.08), 0px 65px 26px 0px rgba(92, 92, 92, 0.02), 0px 101px 28px 0px rgba(92, 92, 92, 0);
+  background: rgb(255, 255, 255);
+}
+
+.truck__cta-button {
+  width: 100%;
+  padding: 15px 50px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(248, 124, 48, 0.15), 0px 3px 3px 0px rgba(248, 124, 48, 0.13), 0px 8px 5px 0px rgba(248, 124, 48, 0.08), 0px 14px 5px 0px rgba(248, 124, 48, 0.02), 0px 21px 6px 0px rgba(248, 124, 48, 0);
+          box-shadow: 0px 1px 2px 0px rgba(248, 124, 48, 0.15), 0px 3px 3px 0px rgba(248, 124, 48, 0.13), 0px 8px 5px 0px rgba(248, 124, 48, 0.08), 0px 14px 5px 0px rgba(248, 124, 48, 0.02), 0px 21px 6px 0px rgba(248, 124, 48, 0);
+  background: rgb(244, 124, 48);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.truck__cta-button--white {
+  border: 1px solid rgb(190, 190, 190);
+  background: #ffffff;
+  color: rgb(60, 60, 60);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.wheelbase__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid rgb(216, 215, 215);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+}
+
+.wheelbase__option {
+  padding: 6px 50px;
+  width: 100%;
+  border-radius: 6px;
+  background: rgb(244, 124, 48);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.wheelbase__label {
+  margin: 20px 0px 50px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.specs__title {
+  color: rgb(244, 124, 48);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+.specs__row-inner {
+  display: -ms-grid;
+  display: grid;
+  gap: 15px;
+  padding: 12px 0px;
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.specs__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.specs__item strong {
+  color: rgb(41, 37, 35);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.specs__text {
+  color: rgb(122, 121, 121);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-top: 12px;
+}
+
+.active-element {
+  width: 100%;
+  position: absolute;
+  bottom: -2px;
+  border-bottom: 2px solid rgb(244, 124, 48);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.breadcrumbs {
+  padding: 0px 0px 30px;
+}
+
+.breadcrumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.breadcrumbs__item a,
+.breadcrumbs__item span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #000000;
+}
+
 * {
   outline: none;
   -webkit-box-sizing: border-box;
@@ -7066,5 +7283,28 @@ body main {
     -webkit-transform: translateY(-3px);
         -ms-transform: translateY(-3px);
             transform: translateY(-3px);
+  }
+
+  .truck__brochure:hover {
+    border: 1px solid rgb(190, 190, 190);
+    background: #ffffff;
+    color: rgb(60, 60, 60);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .truck__cta-button:hover {
+    border: 1px solid rgb(190, 190, 190);
+    background: #ffffff;
+    color: rgb(60, 60, 60);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .truck__cta-button--white:hover {
+    color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(248, 124, 48, 0.15), 0px 3px 3px 0px rgba(248, 124, 48, 0.13), 0px 8px 5px 0px rgba(248, 124, 48, 0.08), 0px 14px 5px 0px rgba(248, 124, 48, 0.02), 0px 21px 6px 0px rgba(248, 124, 48, 0);
+            box-shadow: 0px 1px 2px 0px rgba(248, 124, 48, 0.15), 0px 3px 3px 0px rgba(248, 124, 48, 0.13), 0px 8px 5px 0px rgba(248, 124, 48, 0.08), 0px 14px 5px 0px rgba(248, 124, 48, 0.02), 0px 21px 6px 0px rgba(248, 124, 48, 0);
+    background: rgb(244, 124, 48);
   }
 }
