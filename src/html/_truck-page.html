@@ -27,7 +27,7 @@
         <a href="" class="truck__brochure" target="_blank">Брошюра</a>
         <!-- Галерея -->
         <div class="truck__image">
-          <img src="@img/truck.png" alt="Sollers TR50">
+          <img src="@img/truck.png" alt="Sollers TR50" id="image">
         </div>
         <!-- Кнопки CTA -->
         <div class="truck__cta">
@@ -39,11 +39,87 @@
         <!-- Переключатель колесной базы -->
         <div class="truck__wheelbase wheelbase">
           <div class="wheelbase__options">
-            <button class="wheelbase__option _active">2800</button>
-            <button class="wheelbase__option">3360</button>
-            <button class="wheelbase__option">3600</button>
-            <button class="wheelbase__option">4000</button>
+            <button
+              class="wheelbase__option"
+              data-length="5 120"
+              data-width="1 945"
+              data-height="2 130"
+              data-weight="5 020"
+              data-lifting="2 180"
+              data-structure="3 200"
+              data-structurewidth="2 100"
+              data-structureheight="2 300"
+              data-volume="16"
+              data-pallets="6"
+              data-image="@img/truck.png"
+              data-capacity="Однорядная 3-х местная кабина, без спального места."
+            >2800
+            </button>
+            <button
+              class="wheelbase__option"
+              data-length="5 320"
+              data-width="1 995"
+              data-height="2 330"
+              data-weight="5 000"
+              data-lifting="2 380"
+              data-structure="3 600"
+              data-structurewidth="2 200"
+              data-structureheight="2 200"
+              data-volume="16,4"
+              data-pallets="6"
+              data-image="@img/truck-1.webp"
+              data-capacity="Однорядная 3-х местная кабина, без спального места."
+            >3360
+            </button>
+            <button
+              class="wheelbase__option"
+              data-length="5 830"
+              data-width="1 995"
+              data-height="2 330"
+              data-weight="5 000"
+              data-lifting="2 360"
+              data-structure="4 200"
+              data-structurewidth="2 200"
+              data-structureheight="2 200"
+              data-volume="18"
+              data-pallets="8"
+              data-image="@img/truck-2.webp"
+              data-capacity="Однорядная 3-х местная кабина, без спального места."
+            >3600
+            </button>
+            <button
+              class="wheelbase__option"
+              data-length="6 150"
+              data-width="1 995"
+              data-height="2 330"
+              data-weight="5 000"
+              data-lifting="2 310"
+              data-structure="4 500"
+              data-structurewidth="2 200"
+              data-structureheight="2 200"
+              data-volume="19,5"
+              data-pallets="8"
+              data-image="@img/truck-3.webp"
+              data-capacity="Однорядная 3-х местная кабина, без спального места."
+            >4000
+            </button>
+            <div
+              class="wheelbase__indicator"
+              data-length="6 800"
+              data-width="1 995"
+              data-height="2 330"
+              data-weight="5 000"
+              data-lifting="2 290"
+              data-structure="5 200"
+              data-structurewidth="2 300"
+              data-structureheight="2 200"
+              data-volume="22,5"
+              data-pallets="10"
+              data-image="@img/truck-3.webp"
+              data-capacity="Однорядная 3-х местная кабина, без спального места."
+            ></div>
           </div>
+
           <div class="wheelbase__label">Колёсная база, мм</div>
         </div>
 
@@ -55,13 +131,13 @@
             <h3 class="specs__title">ОСНОВНЫЕ ХАРАКТЕРИСТИКИ</h3>
             <div class="specs__row-inner">
               <div class="specs__row">
-                <div class="specs__item"><strong>5 320</strong><br>Общая длина, мм</div>
-                <div class="specs__item"><strong>1 995</strong><br>Общая ширина, мм</div>
-                <div class="specs__item"><strong>2 330</strong><br>Общая высота, мм</div>
+                <div class="specs__item"><strong id="length">5 320</strong><br>Общая длина, мм</div>
+                <div class="specs__item"><strong id="width">1 995</strong><br>Общая ширина, мм</div>
+                <div class="specs__item"><strong id="height">2 330</strong><br>Общая высота, мм</div>
               </div>
               <div class="specs__row">
-                <div class="specs__item"><strong>5 000</strong><br>Полная масса, кг</div>
-                <div class="specs__item"><strong>2 380</strong><br>Грузоподъёмность, кг</div>
+                <div class="specs__item"><strong id="weight">5 000</strong><br>Полная масса, кг</div>
+                <div class="specs__item"><strong id="lifting">2 380</strong><br>Грузоподъёмность, кг</div>
               </div>
             </div>
           </section>
@@ -71,13 +147,13 @@
             <h3 class="specs__title">ГРУЗОВОЙ ОТСЕК</h3>
             <div class="specs__row-inner">
               <div class="specs__row">
-                <div class="specs__item"><strong>3 800</strong><br>Длина надстройки, мм</div>
-                <div class="specs__item"><strong>2 200</strong><br>Ширина надстройки, мм</div>
-                <div class="specs__item"><strong>2 200</strong><br>Высота надстройки, мм</div>
+                <div class="specs__item"><strong id="structure">3 800</strong><br>Длина надстройки, мм</div>
+                <div class="specs__item"><strong id="structurewidth">2 200</strong><br>Ширина надстройки, мм</div>
+                <div class="specs__item"><strong id="structureheight">2 200</strong><br>Высота надстройки, мм</div>
               </div>
               <div class="specs__row">
-                <div class="specs__item"><strong>16,4</strong><br>Объём грузового отсека, м³</div>
-                <div class="specs__item"><strong>6</strong><br>Палеты</div>
+                <div class="specs__item"><strong id="volume">16,4</strong><br>Объём грузового отсека, м³</div>
+                <div class="specs__item"><strong id="pallets">6</strong><br>Палеты</div>
               </div>
             </div>
           </section>
@@ -85,14 +161,127 @@
           <!-- Вместимость -->
           <section class="specs__block specs__block--capacity">
             <h3 class="specs__title">ВМЕСТИМОСТЬ</h3>
-            <p class="specs__text">Однорядная 3-х местная кабина,<br> без спального места.</p>
+            <p class="specs__text" id="capacity">Однорядная 3-х местная кабина,<br> без спального места.</p>
           </section>
         </div>
       </div>
 
 
     </div>
-
+    <div class="truck-info">
+      <h2 class="truck-info__title">Двигатели и управление</h2>
+      <div class="truck-info__row">
+        <div class="truck-info__image">
+          <img src="@img/info-image.jpeg" alt="">
+        </div>
+        <div class="truck-info__content">
+          <h3>Дизельный двигатель</h3>
+          <p class="truck-info__volume">Объём 2,8 л</p>
+          <ul class="truck-info__list">
+            <li>
+              <img src="@img/arrow-breadcrumbs.png" alt="">
+              <span>Максимальная мощность 140 л.с. при 2900 об/мин</span>
+            </li>
+            <li>
+              <img src="@img/arrow-breadcrumbs.png" alt="">
+              <span>Максимальный крутящий момент 345 при 1500...2000 об/мин</span>
+            </li>
+            <li>
+              <img src="@img/arrow-breadcrumbs.png" alt="">
+              <span>Экологический класс: Евро-5</span>
+            </li>
+            <li>
+              <img src="@img/arrow-breadcrumbs.png" alt="">
+              <span>6-ступенчатая механическая коробка передач</span>
+            </li>
+            <li>
+              <img src="@img/arrow-breadcrumbs.png" alt="">
+              <span>Объём топливного бака 120 л</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="truck-info__row">
+        <div class="truck-info__image">
+          <img src="@img/info-image.jpeg" alt="">
+        </div>
+        <div class="truck-info__content">
+          <h3>Дизельный двигатель</h3>
+          <p class="truck-info__volume">Объём 2,8 л</p>
+          <ul class="truck-info__list">
+            <li>
+              <img src="@img/arrow-breadcrumbs.png" alt="">
+              <span>Максимальная мощность 140 л.с. при 2900 об/мин</span>
+            </li>
+            <li>
+              <img src="@img/arrow-breadcrumbs.png" alt="">
+              <span>Максимальный крутящий момент 345 при 1500...2000 об/мин</span>
+            </li>
+            <li>
+              <img src="@img/arrow-breadcrumbs.png" alt="">
+              <span>Экологический класс: Евро-5</span>
+            </li>
+            <li>
+              <img src="@img/arrow-breadcrumbs.png" alt="">
+              <span>6-ступенчатая механическая коробка передач</span>
+            </li>
+            <li>
+              <img src="@img/arrow-breadcrumbs.png" alt="">
+              <span>Объём топливного бака 120 л</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="comfort">
+      <h2 class="comfort__title">Комфорт</h2>
+      <div class="comfort__grid">
+        <div class="comfort__item">
+          <div class="comfort__image">
+            <img src="@img/stock.jpeg" alt="">
+          </div>
+          <div class="comfort__content">
+            <p class="comfort__title-card">Мультифункциональный руль</p>
+            <p class="comfort__descr">
+              правление аудиосистемой, круиз-контролем телефонией и бортовым компьютером
+            </p>
+          </div>
+        </div>
+        <div class="comfort__item">
+          <div class="comfort__image">
+            <img src="@img/stock.jpeg" alt="">
+          </div>
+          <div class="comfort__content">
+            <p class="comfort__title-card">Мультифункциональный руль</p>
+            <p class="comfort__descr">
+              правление аудиосистемой, круиз-контролем телефонией и бортовым компьютером
+            </p>
+          </div>
+        </div>
+        <div class="comfort__item">
+          <div class="comfort__image">
+            <img src="@img/stock.jpeg" alt="">
+          </div>
+          <div class="comfort__content">
+            <p class="comfort__title-card">Мультифункциональный руль</p>
+            <p class="comfort__descr">
+              правление аудиосистемой, круиз-контролем телефонией и бортовым компьютером
+            </p>
+          </div>
+        </div>
+        <div class="comfort__item">
+          <div class="comfort__image">
+            <img src="@img/stock.jpeg" alt="">
+          </div>
+          <div class="comfort__content">
+            <p class="comfort__title-card">Мультифункциональный руль</p>
+            <p class="comfort__descr">
+              правление аудиосистемой, круиз-контролем телефонией и бортовым компьютером
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 

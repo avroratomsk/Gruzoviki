@@ -22,6 +22,7 @@
 @import '_map';
 @import '_truck-page';
 @import '_breadcrumbs';
+@import '_contact-us';
 
 * {
   outline: none;
@@ -65,7 +66,6 @@ body {
   color: $main;
   main {
     flex: 1 0 auto;
-    padding: 30px 0;
   }
 }
 

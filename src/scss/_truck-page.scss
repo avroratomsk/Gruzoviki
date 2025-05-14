@@ -1,5 +1,6 @@
 .truck {
 
+
   //.truck__title
   &__title {
   }
@@ -79,6 +80,7 @@
     img {
       width: 100%;
       height: 100%;
+      object-fit: cover;
     }
   }
 
@@ -146,9 +148,11 @@
 }
 
 .wheelbase {
+  position: relative;
 
   //.wheelbase__options
   &__options {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -160,14 +164,20 @@
 
   //.wheelbase__option
   &__option {
+    position: relative;
     padding: 6px 50px;
     width: 100%;
     border-radius: 6px;
-    background: rgb(244, 124, 48);
     font-size: 16px;
     font-weight: 500;
     line-height: 150%;
-    color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    z-index: 1;
+
+    &._active {
+      color: #ffffff;
+    }
   }
 
   //.wheelbase__label
@@ -180,6 +190,19 @@
     line-height: 150%;
   }
 
+  //.wheelbase__indicator
+  &__indicator {
+    background: rgb(244, 124, 48);
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 34px;
+    width: 100%;
+    border-radius: 6px;
+    z-index: 0;
+    transition: $animation_speed;
+  }
 }
 
 .specs {
@@ -231,7 +254,7 @@
   }
 
   //.specs__text
-  &__text{
+  &__text {
     color: rgb(122, 121, 121);
     font-size: 16px;
     font-weight: 400;
@@ -246,4 +269,133 @@
   bottom: -2px;
   border-bottom: 2px solid rgb(244, 124, 48);
   transition: all 0.3s ease;
+}
+
+
+.truck-info {
+  padding: 50px 0px;
+
+  //.truck-info__title
+  &__title {
+    margin-bottom: 20px;
+    color: rgb(51, 51, 51);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+  }
+
+  //.truck-info__row
+  &__row {
+    display: flex;
+    gap: 21px;
+    margin-bottom: 35px;
+  }
+
+  //.truck-info__image
+  &__image {
+    max-width: 396px;
+
+    img {
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  //.truck-info__content
+  &__content {
+    width: 100%;
+    padding: 35px 39px;
+    background: #2D2D2D;
+    border-radius: 20px;
+    color: #ffffff;
+  }
+
+  //.truck-info__volume
+  &__volume {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 42px;
+    margin-bottom: 15px;
+  }
+
+  //.truck-info__list
+  &__list {
+    display: grid;
+    gap: 20px;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+
+}
+
+.comfort {
+  padding: 50px 0px;
+
+  //.comfort__title
+  &__title {
+    color: rgb(51, 51, 51);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    margin-bottom: 20px;
+  }
+
+  //.comfort__grid
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 27px;
+  }
+
+  //.comfort__item
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+
+  }
+
+  //.comfort__image
+  &__image {
+
+    img {
+      max-width: 100%;
+      border-radius: 20px;
+    }
+  }
+
+  //.comfort__content
+  &__content {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 14px 0px rgba(92, 92, 92, 0.2), 0px 25px 25px 0px rgba(92, 92, 92, 0.17), 0px 57px 34px 0px rgba(92, 92, 92, 0.1), 0px 102px 41px 0px rgba(92, 92, 92, 0.03), 0px 159px 44px 0px rgba(92, 92, 92, 0);
+    background: rgb(45, 45, 45);
+  }
+
+  //.comfort__title-card
+  &__title-card {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.4px;
+    margin-bottom: 10px;
+  }
+
+  //.comfort__descr
+  &__descr {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+
 }
