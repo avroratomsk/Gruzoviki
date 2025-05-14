@@ -2331,10 +2331,6 @@ template {
   margin-bottom: 35px;
 }
 
-.truck-info__image {
-  max-width: 396px;
-}
-
 .truck-info__image img {
   border-radius: 20px;
   width: 100%;
@@ -5531,6 +5527,12 @@ body main {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .truck-info__image {
+    max-width: 396px;
+  }
+}
+
 @media (min-width: 1200px) {
   .container-xl,
   .container-lg,
@@ -7456,6 +7458,28 @@ body main {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+
+  .truck__row {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .contact__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contact__left {
+    width: 100%;
+    max-width: 100%;
+    padding: 30px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -7465,6 +7489,33 @@ body main {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 40px;
+  }
+
+  .truck-info__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contact-us {
+    height: 50vh;
+    min-height: 500px;
+    padding: 40px;
+  }
+
+  .contact-us__title {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .contact-us__subtitle {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .contact-us__btn {
+    width: 100%;
   }
 }
 
@@ -7506,6 +7557,44 @@ body main {
     text-align: center;
   }
 
+  .truck__nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+
+  .truck__nav-item._active {
+    color: #F47C30;
+  }
+
+  .truck__cta {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .wheelbase__options {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .wheelbase__option._active {
+    color: #F47C30;
+  }
+
+  .wheelbase__indicator {
+    display: none;
+  }
+
+  .active-element {
+    display: none;
+  }
+
   .btn {
     font-size: 16px;
   }
@@ -7520,8 +7609,25 @@ body main {
     gap: 40px;
   }
 
+  .specs__row {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact__left {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .btn {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .specs__row {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

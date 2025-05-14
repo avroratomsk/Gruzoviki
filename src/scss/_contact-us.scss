@@ -7,6 +7,12 @@
   background-repeat: no-repeat;
   background-position: center center;
 
+  @media screen and (max-width: 992px) {
+    height: 50vh;
+    min-height: 500px;
+    padding: 40px;
+  }
+
   //.contact-us__inner
   &__inner{
     max-width: 470px;
@@ -23,6 +29,11 @@
     span {
       color: $accent;
     }
+
+    @media screen and (max-width: 992px) {
+      font-size: 35px;
+      text-align: center;
+    }
   }
 
   //.contact-us__subtitle
@@ -36,6 +47,11 @@
 
     span {
       color: $accent;
+    }
+
+    @media screen and (max-width: 992px) {
+      font-size: 20px;
+      text-align: center;
     }
   }
 
@@ -60,6 +76,10 @@
     line-height: 140%;
     background: #ffffff;
     border: 1px solid rgb(190, 190, 190);
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
   }
 
   //.contact-us__btn--orange
