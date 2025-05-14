@@ -2534,6 +2534,84 @@ template {
   background: rgb(244, 124, 48);
 }
 
+.contact {
+  margin-bottom: 60px;
+}
+
+.contact__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.contact__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  max-width: 400px;
+  padding: 50px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 6px 14px 0px rgba(92, 92, 92, 0.2), 0px 25px 25px 0px rgba(92, 92, 92, 0.17), 0px 57px 34px 0px rgba(92, 92, 92, 0.1), 0px 102px 41px 0px rgba(92, 92, 92, 0.03), 0px 159px 44px 0px rgba(92, 92, 92, 0);
+          box-shadow: 0px 6px 14px 0px rgba(92, 92, 92, 0.2), 0px 25px 25px 0px rgba(92, 92, 92, 0.17), 0px 57px 34px 0px rgba(92, 92, 92, 0.1), 0px 102px 41px 0px rgba(92, 92, 92, 0.03), 0px 159px 44px 0px rgba(92, 92, 92, 0);
+  background: rgb(45, 45, 45);
+}
+
+.contact__right {
+  width: 100%;
+}
+
+.contact__map {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 12px 27px 0px rgba(120, 120, 120, 0.05), 0px 49px 49px 0px rgba(120, 120, 120, 0.04), 0px 111px 66px 0px rgba(120, 120, 120, 0.03), 0px 197px 79px 0px rgba(120, 120, 120, 0.01), 0px 307px 86px 0px rgba(120, 120, 120, 0);
+          box-shadow: 0px 12px 27px 0px rgba(120, 120, 120, 0.05), 0px 49px 49px 0px rgba(120, 120, 120, 0.04), 0px 111px 66px 0px rgba(120, 120, 120, 0.03), 0px 197px 79px 0px rgba(120, 120, 120, 0.01), 0px 307px 86px 0px rgba(120, 120, 120, 0);
+  overflow: hidden;
+}
+
+.contact__label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.contact__info {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.contact__info a {
+  color: #F47C30;
+}
+
+.contact__info span {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact__item-horiz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.contact .socials {
+  margin-right: 0px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 * {
   outline: none;
   -webkit-box-sizing: border-box;

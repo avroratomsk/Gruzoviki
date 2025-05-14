@@ -1,0 +1,82 @@
+.contact {
+  margin-bottom: 60px;
+
+
+  //.contact__title
+  &__title {
+  }
+
+  //.contact__row
+  &__row {
+    display: flex;
+    gap: 24px;
+    margin-top: 20px;
+  }
+
+  //.contact__left
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    max-width: 400px;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 14px 0px rgba(92, 92, 92, 0.2), 0px 25px 25px 0px rgba(92, 92, 92, 0.17), 0px 57px 34px 0px rgba(92, 92, 92, 0.1), 0px 102px 41px 0px rgba(92, 92, 92, 0.03), 0px 159px 44px 0px rgba(92, 92, 92, 0);
+    background: rgb(45, 45, 45);
+  }
+
+  //.contact__right
+  &__right {
+    width: 100%;
+  }
+
+  //.contact__map
+  &__map {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 12px 27px 0px rgba(120, 120, 120, 0.05), 0px 49px 49px 0px rgba(120, 120, 120, 0.04), 0px 111px 66px 0px rgba(120, 120, 120, 0.03), 0px 197px 79px 0px rgba(120, 120, 120, 0.01), 0px 307px 86px 0px rgba(120, 120, 120, 0);
+    overflow: hidden;
+  }
+
+  //.contact__item
+  &__item {
+  }
+
+  //.contact__label
+  &__label {
+    color: rgba($color: #ffffff, $alpha: .8);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  //.contact__info
+  &__info {
+    color: rgba($color: #ffffff, $alpha: 1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+
+    a {
+      color: $accent;
+    }
+
+    span {
+      color: rgba($color: #ffffff, $alpha: .8);
+    }
+  }
+
+  //.contact__item-horiz
+  &__item-horiz {
+    display: flex;
+    gap: 10px;
+  }
+
+  .socials {
+    margin-right: 0px;
+    align-self: flex-end;
+  }
+
+}
