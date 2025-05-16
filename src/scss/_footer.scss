@@ -12,10 +12,10 @@
   &__row {
     display: flex;
     justify-content: space-between;
-     @media screen and (max-width: 992px) {
-       flex-direction: column;
-       gap: 40px;
-     }
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      gap: 40px;
+    }
   }
 
   //.footer__col
@@ -50,6 +50,13 @@
 
       a {
         color: $accent;
+        transition: $animation-speed;
+
+        @media(hover: hover) {
+          &:hover {
+            color: #ffffff;
+          }
+        }
       }
     }
   }
@@ -76,10 +83,26 @@
 
   //.footer__author
   &__author {
+    a {
+      transition: $animation-speed;
+
+      @media(hover: hover) {
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
   }
 
   //.footer__privacy
   &__privacy {
+    transition: $animation-speed;
+
+    @media(hover: hover) {
+      &:hover {
+        color: $accent;
+      }
+    }
   }
 
 
@@ -125,6 +148,13 @@
     font-size: 13px;
     font-weight: 400;
     line-height: 20px;
+    transition: $animation_speed;
+
+    @media(hover: hover) {
+      &:hover {
+        color: $accent;
+      }
+    }
   }
 
 
