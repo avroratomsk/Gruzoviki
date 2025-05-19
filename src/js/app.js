@@ -73,3 +73,40 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
 })
+
+const burgerBtn = document.querySelector('.burger');
+
+burgerBtn?.addEventListener('click', () => {
+  document.querySelector('.nav').style.display = 'flex';
+})
+
+
+const closeBtn = document.querySelector('.close');
+
+closeBtn?.addEventListener('click', () => {
+  document.querySelector('.nav').style.display = 'none';
+})
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});

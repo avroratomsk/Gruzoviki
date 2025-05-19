@@ -1669,7 +1669,7 @@ template {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
 }
 
 .catalog-home__item {
@@ -1684,6 +1684,10 @@ template {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+}
+
+.catalog-home__image img {
+  max-width: 100%;
 }
 
 .catalog-home__text {
@@ -2636,6 +2640,59 @@ template {
       align-self: flex-end;
 }
 
+.index-slider {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.index-slider__slider {
+  height: 100%;
+}
+
+.index-slider__inner {
+  max-width: 466px;
+  padding: 60px 0px;
+}
+
+.index-slider__title {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 11px;
+  color: #ffffff;
+}
+
+.index-slider__title span {
+  color: #F47C30;
+}
+
+.index-slider__subtitle {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.index-slider .swiper-pagination {
+  right: 20px;
+  width: 20px !important;
+}
+
+.index-slider .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.index-slider .swiper-pagination-bullet-active {
+  background: rgb(244, 124, 48);
+}
+
 * {
   outline: none;
   -webkit-box-sizing: border-box;
@@ -2710,6 +2767,13 @@ body main {
   -webkit-transition: 0.25s;
   transition: 0.25s;
   cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #F47C30;
 }
 
 @media (min-width: 576px) {
@@ -5563,6 +5627,19 @@ body main {
   .truck-info__image {
     max-width: 396px;
   }
+
+  .index-slider {
+    height: 100vh;
+    min-height: 800px;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .close {
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -7479,6 +7556,35 @@ body main {
 }
 
 @media screen and (max-width: 1200px) {
+  .header__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .header__info {
+    display: none;
+  }
+
+  .header__text {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px;
+  }
+
+  .header__text p span {
+    white-space: nowrap;
+  }
+
+  .header__text p a {
+    white-space: nowrap;
+  }
+
+  .socials {
+    margin-right: 20px;
+  }
+
   .callback__inner {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -7515,6 +7621,38 @@ body main {
 }
 
 @media screen and (max-width: 992px) {
+  .header__actions {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #222222;
+    z-index: 100;
+  }
+
+  .nav__list {
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .nav__link {
+    color: #ffffff;
+    font-size: 20px;
+  }
+
   .footer__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -7625,6 +7763,10 @@ body main {
 
   .active-element {
     display: none;
+  }
+
+  .index-slider__title {
+    font-size: 35px;
   }
 
   .btn {

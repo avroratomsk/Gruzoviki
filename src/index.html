@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-    @@include('html/head.html', {
-        "title":"Сборка GULP"
-    })
-    <body>
-        @@include('html/_header.html')
+@@include('html/head.html', {
+"title":"Сборка GULP"
+})
+<body>
+@@include('html/_header.html')
 
-        <main>
-<!--            @@include('html/_hello.html')-->
-            @@include('html/_diller.html')
-            @@include('html/_catalog-home.html')
-            @@include('html/_callback.html')
-            @@include('html/_about.html')
-            @@include('html/_reviews.html')
-            @@include('html/_news.html')
-            @@include('html/_map.html')
-        </main>
+<main>
+  @@include('html/_index-slider.html')
+  @@include('html/_diller.html')
+  @@include('html/_catalog-home.html')
+  @@include('html/_callback.html')
+  @@include('html/_about.html')
+  @@include('html/_reviews.html')
+  @@include('html/_news.html')
+  @@include('html/_map.html')
+</main>
 
-        @@include('html/_footer.html')
-
-        <script src="js/app.min.js"></script>
-    </body>
+@@include('html/_footer.html')
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
 </html>

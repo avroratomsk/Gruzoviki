@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head lang="ru">
+<head lang="ru">
   <meta charset="UTF-8"/>
   <meta
     http-equiv="X-UA-Compatible"
@@ -13,12 +13,16 @@
   <title>Сборка GULP</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250516174053"
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250519164203"
         rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css?_v=20250516174053"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css?_v=20250519164203"/>
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20250516174053"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250519164203"
+  />
+  <link
+    rel="stylesheet"
+    href="css/style.min.css?_v=20250519164203"
   />
 
   <!-- https://realfavicongenerator.net -->
@@ -52,14 +56,15 @@
   />
 </head>
 
-    <body>
-        <div class="header">
+<body>
+<div class="header">
   <div class="container">
     <div class="header__inner">
       <a href="/" class="header__logo">
         <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
       </a>
       <nav class="header__nav nav">
+        <button type="button" class="close"><i class="fa-solid fa-xmark"></i></button>
         <ul class="nav__list">
           <li class="nav__item">
             <a href="" class="nav__link">Каталог</a>
@@ -85,19 +90,66 @@
           <button type="button" class="header__search-btn"><picture><source srcset="img/search.webp" type="image/webp"><img src="img/search.png" alt=""></picture></button>
         </div>
         <div class="header__text">
-          <p class=""><span>Адрес:</span>г.Владивосток, ул. Выселковая, д.30, стр.10</p>
+          <p class=""><span>Адрес:</span><span>г.Владивосток, ул. Выселковая, д.30, стр.10</span></p>
           <p class=""><span>Телефон:</span><a href="">+7 (984) 199-20-99 <picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt=""></picture></a></p>
           <p class=""><span>E-mail:</span><a href="">isuzu-dv@mail.ru <picture><source srcset="img/mail.webp" type="image/webp"><img src="img/mail.png" alt=""></picture></a></p>
         </div>
       </div>
+      <button type="button" class="burger"><i class="fa-solid fa-bars-staggered"></i></button>
     </div>
   </div>
 </div>
 
 
-        <main>
-
-            <div class="diller">
+<main>
+  <div class="index-slider">
+  <div class="index-slider__slider swiper">
+    <div class="index-slider__wrapper swiper-wrapper">
+      <div class="index-slider__slide swiper-slide" style="background-image: url('img/contact-us.jpeg')">
+        <div class="container">
+          <div class="index-slider__inner">
+            <p class="index-slider__title title">
+              Грузовые автомобили <span>SOLLERS TR</span>
+            </p>
+            <p class="index-slider__subtitle">
+              Маневренный грузовой автомобиль для городских перевозок
+            </p>
+            <button type="button" class="index-slider__btn btn">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+      <div class="index-slider__slide swiper-slide" style="background-image: url('img/contact-us.jpeg')">
+        <div class="container">
+          <div class="index-slider__inner">
+            <p class="index-slider__title title">
+              Грузовые автомобили <span>SOLLERS TR</span>
+            </p>
+            <p class="index-slider__subtitle">
+              Маневренный грузовой автомобиль для городских перевозок
+            </p>
+            <button type="button" class="index-slider__btn btn">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+      <div class="index-slider__slide swiper-slide" style="background-image: url('img/contact-us.jpeg')">
+        <div class="container">
+          <div class="index-slider__inner">
+            <p class="index-slider__title title">
+              Грузовые автомобили <span>SOLLERS TR</span>
+            </p>
+            <p class="index-slider__subtitle">
+              Маневренный грузовой автомобиль для городских перевозок
+            </p>
+            <button type="button" class="index-slider__btn btn">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+  <div class="diller">
   <div class="container">
     <div class="diller__inner">
       <h2 class="diller__title">ГРУЗОВИКИ <span>SOLLERS</span> ОТ ОФИЦИАЛЬНОГО ДИЛЕРА ВО ВЛАДИВОСТОКЕ</h2>
@@ -105,7 +157,7 @@
     </div>
   </div>
 </div>
-            <div class="catalog-home">
+  <div class="catalog-home">
   <div class="container">
     <div class="catalog-home__inner">
       <h2 class="catalog-home__title">Sollers TR</h2>
@@ -130,7 +182,7 @@
     </div>
   </div>
 </div>
-            <div class="callback">
+  <div class="callback">
   <div class="container">
     <div class="callback__inner">
       <div class="callback__left">
@@ -163,7 +215,7 @@
     </div>
   </div>
 </div>
-            <div class="about">
+  <div class="about">
   <div class="container">
     <div class="about__inner">
       <div class="about__left">
@@ -191,7 +243,7 @@
     </div>
   </div>
 </div>
-            <div class="reviews">
+  <div class="reviews">
   <div class="reviews__inner">
     <div class="reviews__row">
       <div class="reviews__item">
@@ -325,7 +377,7 @@
     </div>
   </div>
 </div>
-            <div class="stock">
+  <div class="stock">
   <div class="container">
     <div class="stock__inner">
       <h2 class="stock__title title">Новости</h2>
@@ -365,7 +417,7 @@
     </div>
   </div>
 </div>
-            <div class="map">
+  <div class="map">
   <div class="container">
     <div class="map__inner">
       <iframe
@@ -374,9 +426,9 @@
     </div>
   </div>
 </div>
-        </main>
+</main>
 
-        <div class="footer">
+<div class="footer">
   <div class="container">
     <div class="footer__inner">
       <div class="footer__row">
@@ -432,7 +484,7 @@
     </div>
   </div>
 </div>
-
-        <script src="js/app.min.js?_v=20250516174053"></script>
-    </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250519164203"></script>
+<script src="js/app.min.js?_v=20250519164203"></script>
+</body>
 </html>

@@ -26,7 +26,6 @@
     }
 
 
-
     &::before {
       content: "";
       position: absolute;
@@ -42,7 +41,7 @@
   &__grid {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   }
 
   //.catalog-home__item
@@ -55,6 +54,10 @@
 
   //.catalog-home__image
   &__image {
+
+    img {
+      max-width: 100%;
+    }
   }
 
   //.catalog-home__text

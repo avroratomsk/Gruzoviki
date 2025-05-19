@@ -24,6 +24,7 @@
 @import '_breadcrumbs';
 @import '_contact-us';
 @import '_contact';
+@import '_index-slider';
 
 * {
   outline: none;
@@ -106,5 +107,22 @@ body {
 
   @media screen and (max-width: 578px) {
     width: 100%;
+  }
+}
+
+.burger {
+
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: $accent;
+  @media screen and (min-width: 992px) {
+    display: none;
   }
 }
