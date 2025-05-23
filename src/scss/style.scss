@@ -25,6 +25,9 @@
 @import '_contact-us';
 @import '_contact';
 @import '_index-slider';
+@import '_faq';
+@import '_about-page';
+@import '_stock';
 
 * {
   outline: none;
@@ -54,6 +57,11 @@ button {
   background: transparent;
   padding: 0;
   margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -124,5 +132,32 @@ body {
   color: $accent;
   @media screen and (min-width: 992px) {
     display: none;
+  }
+}
+
+.title {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 50px;
+  color: rgb(51, 51, 51);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $accent;
   }
 }

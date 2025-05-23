@@ -7,19 +7,20 @@ const indicator = document.querySelector('#active-element');
 const truckNavElement = document.querySelectorAll('.truck__nav-item');
 
 function moveIndicator(el, nameIndiator) {
-  const { offsetLeft, offsetWidth } = el;
+  const {offsetLeft, offsetWidth} = el;
   nameIndiator.style.left = offsetLeft + 'px';
   nameIndiator.style.width = offsetWidth + 'px';
 }
 
 truckNavElement?.forEach(el => {
   el.addEventListener('click', () => {
-    truckNavElement.forEach((el) => {el.classList.remove('_active');});
+    truckNavElement.forEach((el) => {
+      el.classList.remove('_active');
+    });
     el.classList.add('_active');
     moveIndicator(el, indicator);
   });
 })
-
 
 
 const optionBtns = document.querySelectorAll('.wheelbase__option');
@@ -27,7 +28,9 @@ const indicatorOption = document.querySelector('.wheelbase__indicator');
 
 optionBtns?.forEach((btn) => {
   btn.addEventListener('click', () => {
-    optionBtns.forEach((el) => {el.classList.remove('_active');});
+    optionBtns.forEach((el) => {
+      el.classList.remove('_active');
+    });
     btn.classList.add('_active');
     moveIndicator(btn, indicatorOption);
 
@@ -43,11 +46,11 @@ optionBtns?.forEach((btn) => {
       const value = btn.dataset[field];
       const el = document.getElementById(field);
 
-      if(el) {
-        if(field === "image"){
+      if (el) {
+        if (field === "image") {
           console.log(value)
           el.src = value
-        }else {
+        } else {
           el.innerText = value;
         }
       }
@@ -64,11 +67,11 @@ optionBtns?.forEach((btn) => {
 })
 
 window.addEventListener('DOMContentLoaded', () => {
-  if(truckNavElement[0]) {
+  if (truckNavElement[0]) {
     moveIndicator(truckNavElement[0], indicator);
   }
 
-  if(optionBtns[0]) {
+  if (optionBtns[0]) {
     moveIndicator(optionBtns[0], indicatorOption);
   }
 
@@ -110,3 +113,16 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+
+
+const accordionTrigger = document.querySelectorAll('.faq__trigger');
+
+const openAccordion = (e) => {
+  const parent = e.currentTarget.parentElement;
+  parent.classList.toggle('active');
+}
+
+accordionTrigger?.forEach(trigger => {
+  trigger.addEventListener('click', openAccordion)
+})

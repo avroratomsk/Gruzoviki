@@ -14,49 +14,47 @@
   }
 
   //.contact-us__inner
-  &__inner{
+  &__inner {
     max-width: 470px;
-  }
 
-  //.contact-us__title
-  &__title{
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 120%;
-    text-transform: uppercase;
-    color: #ffffff;
+    p:first-child {
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 120%;
+      text-transform: uppercase;
+      color: #ffffff;
 
-    span {
-      color: $accent;
+      span {
+        color: $accent;
+      }
+
+      @media screen and (max-width: 992px) {
+        font-size: 35px;
+        text-align: center;
+      }
     }
 
-    @media screen and (max-width: 992px) {
-      font-size: 35px;
-      text-align: center;
-    }
-  }
+    p:nth-child(2) {
+      margin-top: 25px;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 140%;
+      text-transform: uppercase;
 
-  //.contact-us__subtitle
-  &__subtitle{
-    margin-top: 25px;
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 140%;
-    text-transform: uppercase;
+      span {
+        color: $accent;
+      }
 
-    span {
-      color: $accent;
-    }
-
-    @media screen and (max-width: 992px) {
-      font-size: 20px;
-      text-align: center;
+      @media screen and (max-width: 992px) {
+        font-size: 20px;
+        text-align: center;
+      }
     }
   }
 
   //.contact-us__btns
-  &__btns{
+  &__btns {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -64,7 +62,7 @@
   }
 
   //.contact-us__btn
-  &__btn{
+  &__btn {
     width: 326px;
     height: 45px;
     display: flex;
@@ -83,18 +81,13 @@
   }
 
   //.contact-us__btn--orange
-  &__btn--orange{
+  &__btn--orange {
     color: rgb(255, 255, 255);
     border: 1px solid $accent;
     border-radius: 5px;
-    box-shadow: 0px 1px 2px 0px rgba(248, 124, 48, 0.15),0px 3px 3px 0px rgba(248, 124, 48, 0.13),0px 8px 5px 0px rgba(248, 124, 48, 0.08),0px 14px 5px 0px rgba(248, 124, 48, 0.02),0px 21px 6px 0px rgba(248, 124, 48, 0);
+    box-shadow: 0px 1px 2px 0px rgba(248, 124, 48, 0.15), 0px 3px 3px 0px rgba(248, 124, 48, 0.13), 0px 8px 5px 0px rgba(248, 124, 48, 0.08), 0px 14px 5px 0px rgba(248, 124, 48, 0.02), 0px 21px 6px 0px rgba(248, 124, 48, 0);
     background: rgb(244, 124, 48);
   }
-
-
-
-
-
 
 
 }
