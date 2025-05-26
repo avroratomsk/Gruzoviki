@@ -1,0 +1,22 @@
+.text-block {
+  padding: 50px 0px;
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 130%;
+    margin-bottom: 10px;
+  }
+  p{
+    line-height: 130%;
+    margin: 15px 0px;
+  }
+
+  ul,ol {
+    margin-left: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    padding: 0;
+    margin: 15px 0px;
+  }
+}

@@ -1,0 +1,45 @@
+.catalog {
+  padding: 50px 0px;
+
+  //.catalog__inner
+  &__inner {
+  }
+
+  //.catalog__title
+  &__title {
+  }
+
+  //.catalog__grid
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 50px;
+  }
+
+  //.catalog__item
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  //.catalog__image
+  &__image {
+
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  //.catalog__text
+  &__text {
+    color: rgb(82, 82, 82);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+
+}
