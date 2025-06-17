@@ -13,16 +13,16 @@
   <title>Сборка GULP</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250529100614"
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250617113606"
         rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css?_v=20250529100614"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css?_v=20250617113606"/>
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250529100614"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250617113606"
   />
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20250529100614"
+    href="css/style.min.css?_v=20250617113606"
   />
 
   <!-- https://realfavicongenerator.net -->
@@ -64,7 +64,7 @@
         <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
       </a>
       <nav class="header__nav nav">
-        <button type="button" class="close"><i class="fa-solid fa-xmark"></i></button>
+<!--        <button type="button" class="close"><i class="fa-solid fa-xmark"></i></button>-->
         <ul class="nav__list">
           <li class="nav__item">
             <a href="" class="nav__link">Каталог</a>
@@ -143,7 +143,7 @@
             <div class="index-slider__subtitle">
               <p>Маневренный грузовой автомобиль для городских перевозок</p>
             </div>
-            <button type="button" class="index-slider__btn btn">Оставить заявку</button>
+            <button type="button" class="index-slider__btn btn" data-popup="callback">Оставить заявку</button>
           </div>
         </div>
       </div>
@@ -443,27 +443,6 @@
           <p class="stock__date">20 марта 2024</p>
           <a href="" class="stock__name">Новый автомобиль от бренда Sollers</a>
         </div>
-        <div class="stock__card">
-          <a href="" class="stock__image">
-            <picture><source srcset="img/stock.webp" type="image/webp"><img src="img/stock.jpeg" alt=""></picture>
-          </a>
-          <p class="stock__date">20 марта 2024</p>
-          <a href="" class="stock__name">Новый автомобиль от бренда Sollers</a>
-        </div>
-        <div class="stock__card">
-          <a href="" class="stock__image">
-            <picture><source srcset="img/stock.webp" type="image/webp"><img src="img/stock.jpeg" alt=""></picture>
-          </a>
-          <p class="stock__date">20 марта 2024</p>
-          <a href="" class="stock__name">Новый автомобиль от бренда Sollers</a>
-        </div>
-        <div class="stock__card">
-          <a href="" class="stock__image">
-            <picture><source srcset="img/stock.webp" type="image/webp"><img src="img/stock.jpeg" alt=""></picture>
-          </a>
-          <p class="stock__date">20 марта 2024</p>
-          <a href="" class="stock__name">Новый автомобиль от бренда Sollers</a>
-        </div>
       </div>
       <div class="stock__link-wrp">
         <a href="" class="stock__link">Все новости <picture><source srcset="img/arrow-right.webp" type="image/webp"><img src="img/arrow-right.png" alt=""></picture></a>
@@ -538,7 +517,23 @@
     </div>
   </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250529100614"></script>
-<script src="js/app.min.js?_v=20250529100614"></script>
+
+<div id="callback" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__top">
+        <button data-close type="button" class="popup__close close"></button>
+      </div>
+      <h2 class="popup__title">Обратный звонок</h2>
+      <form action="" class="popup__form form" method="POST" id="callback-form">
+        <input type="text" name="name" class="form__inp" placeholder="Ваше имя" required/>
+        <input type="tel" name="phone" class="form__inp" placeholder="номер телефона" required data-tel-input/>
+        <button type="submit" class="form__submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250617113606"></script>
+<script src="js/app.min.js?_v=20250617113606"></script>
 </body>
 </html>

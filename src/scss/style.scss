@@ -30,6 +30,8 @@
 @import '_stock';
 @import '_text-block';
 @import '_catalog';
+@import '_popup';
+@import '_forms';
 
 * {
   outline: none;
@@ -132,9 +134,7 @@ body {
   top: 20px;
   right: 20px;
   color: $accent;
-  @media screen and (min-width: 992px) {
-    display: none;
-  }
+  cursor: pointer;
 }
 
 .title {
@@ -161,5 +161,42 @@ body {
     height: 2px;
     width: 100%;
     background-color: $accent;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 25px;
+  height: 25px;
+  transition: $animation_speed;
+
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    margin-left: -50%;
+    height: 2px;
+    margin-top: -1px;
+    background-color: rgba($color: #000000, $alpha: 1.0);
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+
+  @media (hover:hover) {
+    &:hover {
+      transform: rotate(180deg);
+    }
   }
 }

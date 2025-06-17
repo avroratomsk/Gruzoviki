@@ -1,7 +1,7 @@
 import * as functions from './modules/baseFunctions.js';
 
 functions.isWebp();
-
+import "./modules/popup.js"
 
 const indicator = document.querySelector('#active-element');
 const truckNavElement = document.querySelectorAll('.truck__nav-item');
