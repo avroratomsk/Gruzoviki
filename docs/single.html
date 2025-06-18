@@ -13,16 +13,16 @@
   <title>Сборка GULP</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250617113606"
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250618104026"
         rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css?_v=20250617113606"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css?_v=20250618104026"/>
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250617113606"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250618104026"
   />
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20250617113606"
+    href="css/style.min.css?_v=20250618104026"
   />
 
   <!-- https://realfavicongenerator.net -->
@@ -145,14 +145,15 @@
         </li>
       </ul>
     </div>
-    <div class="truck__row">
+
+    <div class="truck__row" id="tech-chars">
       <div class="truck__left">
         <!-- Навигация по разделам -->
         <nav class="truck__nav">
           <ul class="truck__nav-list">
-            <li class="truck__nav-item _active">Технические характеристики</li>
-            <li class="truck__nav-item">Двигатель и управление</li>
-            <li class="truck__nav-item">Комфорт</li>
+            <li class="truck__nav-item _active" data-anchor="tech-chars">Технические характеристики</li>
+            <li class="truck__nav-item" data-anchor="truck-info">Двигатель и управление</li>
+            <li class="truck__nav-item" data-anchor="comfort">Комфорт</li>
           </ul>
           <div class="active-element" id="active-element"></div>
         </nav>
@@ -301,7 +302,8 @@
 
 
     </div>
-    <div class="truck-info">
+
+    <div class="truck-info" id="truck-info">
       <h2 class="truck-info__title">Двигатели и управление</h2>
       <div class="truck-info__row">
         <div class="truck-info__image">
@@ -351,7 +353,8 @@
         </div>
       </div>
     </div>
-    <div class="comfort">
+
+    <div class="comfort" id="comfort">
       <h2 class="comfort__title">Комфорт</h2>
       <div class="comfort__grid">
         <div class="comfort__item">
@@ -475,6 +478,6 @@
 </div>
 
 
-        <script src="js/app.min.js?_v=20250617113606"></script>
+        <script src="js/app.min.js?_v=20250618104026"></script>
     </body>
 </html>

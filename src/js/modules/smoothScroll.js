@@ -1,4 +1,4 @@
-import { bodyUnLock } from './baseFunctions.js';
+import {bodyUnLock} from './baseFunctions.js';
 
 const links = document.querySelectorAll('[data-anchor]');
 const isMainPage = window.location.pathname === '/';
@@ -14,12 +14,6 @@ const scrollToElement = (elementId) => {
         elementPosition - document.querySelector('header.header').clientHeight;
     }
 
-    // Закрытие меню и разблокировка body, если требуется
-    document.querySelector('.header')?.classList.remove('opened');
-    // Убираем активность кнопки открытого меню
-    document.querySelector('.mobile-menu-button').classList.remove('opened');
-    bodyUnLock?.();
-
     window.scrollTo({
       top: elementPosition,
       behavior: 'smooth',
@@ -31,30 +25,11 @@ const scrollToElement = (elementId) => {
 links?.forEach((link) => {
   const anchor = link.dataset.anchor;
 
-  if (isMainPage) {
-    // На главной странице выполняем скролл
-    link.addEventListener('click', (event) => {
-      if (anchor) {
-        event.preventDefault();
-        scrollToElement(anchor);
-
-        // Закрытие навигации (если требуется)
-        document.querySelector('.nav')?.classList.remove('opened');
-        // Убираем активность кнопки открытого меню
-        document
-          .querySelector('.mobile-menu-button')
-          .classList.remove('opened');
-        bodyUnLock?.();
-      }
-    });
-  } else {
-    // На других страницах сохраняем секцию в localStorage
-    link.addEventListener('click', () => {
-      if (anchor) {
-        localStorage.setItem('scrollToSection', anchor);
-      }
-    });
-  }
+  link.addEventListener('click', (event) => {
+    if (anchor) {
+      scrollToElement(anchor);
+    }
+  });
 });
 
 // Скроллим к секции после полной загрузки страницы

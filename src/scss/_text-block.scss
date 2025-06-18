@@ -1,16 +1,25 @@
 .text-block {
   padding: 50px 0px;
 
+  //.text-block__inner
+  &__inner {
+    max-width: 1100px;
+    padding: 30px 50px;
+    margin: 0 auto;
+    background: #f7f7f7;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     line-height: 130%;
     margin-bottom: 10px;
   }
-  p{
+
+  p {
     line-height: 130%;
     margin: 15px 0px;
   }
 
-  ul,ol {
+  ul, ol {
     margin-left: 20px;
   }
 

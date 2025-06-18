@@ -2,6 +2,7 @@ import * as functions from './modules/baseFunctions.js';
 
 functions.isWebp();
 import "./modules/popup.js"
+import "./modules/smoothScroll.js"
 
 const indicator = document.querySelector('#active-element');
 const truckNavElement = document.querySelectorAll('.truck__nav-item');
@@ -90,29 +91,29 @@ closeBtn?.addEventListener('click', () => {
   document.querySelector('.nav').style.display = 'none';
 })
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
-
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
+// const swiper = new Swiper('.swiper', {
+//   // Optional parameters
+//   direction: 'vertical',
+//   loop: true,
+//
+//
+//   // If we need pagination
+//   pagination: {
+//     el: '.swiper-pagination',
+//     dynamicBullets: true,
+//   },
+//
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
+// });
 
 
 
