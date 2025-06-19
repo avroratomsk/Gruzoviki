@@ -48,8 +48,31 @@
   &__content {
     display: none;
     margin-top: 40px;
+
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 20px;
+      li {
+        line-height: 150%;
+        margin-bottom: 7px;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: $accent;
+        }
+      }
+    }
+
     p {
       line-height: 150%;
+      margin-bottom: 10px;
     }
   }
 

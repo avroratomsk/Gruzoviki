@@ -8,8 +8,53 @@
       <form action="" class="popup__form form" method="POST" id="callback-form">
         <input type="text" name="name" class="form__inp" placeholder="Ваше имя" required/>
         <input type="tel" name="phone" class="form__inp" placeholder="номер телефона" required data-tel-input/>
+        <div class="form__row">
+            <input type="checkbox" name="agreement" class="form" id="agreement">
+            <label for="agreement" class="form__label">Я согласен(а) с <a href="" target="_blank">политиккой конфиденциальности</a></label>
+        </div>
+        <div class="form__row">
+
+        </div>
         <button type="submit" class="form__submit">Отправить</button>
       </form>
     </div>
   </div>
+</div>
+
+<div id="diller" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__top">
+        <button data-close type="button" class="popup__close close"></button>
+      </div>
+      <h2 class="popup__title">Связаться с диллером</h2>
+      <form action="" class="popup__form form" method="POST" id="callback-form">
+        <input type="text" name="name" class="form__inp" placeholder="Ваше имя" required/>
+        <input type="tel" name="phone" class="form__inp" placeholder="номер телефона" required data-tel-input/>
+
+        <button type="submit" class="form__submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="cookie-notice" class="cookie-notice">
+  <div>
+    <p>
+      Мы используем cookie и сервис обработки персональных данных посредством метрической программы
+    </p>
+    <p>
+      <a href="https://yandex.ru/legal/metrica_termsofuse/ru/" target="_blank">«Яндекс.Метрика».</a>.
+      Это позволяет нам анализировать взаимодействие посетителей с сайтом и делать его лучше.
+    </p>
+    <p>
+      Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов
+      <a href="[[~23]]" target="_blank">cookie</a> и
+      <a href="[[~22]]" target="_blank">
+        политикой конфиденциальности
+      </a>.
+    </p>
+  </div>
+
+  <button type="button" id="accept-cookies" class="accept-cookies">Я согласен</button>
 </div>

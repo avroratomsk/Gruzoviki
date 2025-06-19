@@ -49,7 +49,6 @@ optionBtns?.forEach((btn) => {
 
       if (el) {
         if (field === "image") {
-          console.log(value)
           el.src = value
         } else {
           el.innerText = value;
@@ -73,6 +72,34 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   if (optionBtns[0]) {
+    let fields = [
+      "length", "width", "height", "weight", "lifting", "structure", "structure",
+      "structurewidth", "structureheight", "volume", "pallets", "capacity",
+    ]
+
+    fields.forEach((field) => {
+      const value = optionBtns[0].dataset[field];
+      const el = document.getElementById(field);
+
+      if (el) {
+        if (field === "image") {
+          el.src = value
+        } else {
+          el.innerText = value;
+        }
+      }
+    })
+
+    const imageEl = document.getElementById("image");
+    const imagePath = optionBtns[0].dataset.image;
+    const sourceEl = imageEl?.previousElementSibling?.tagName === "SOURCE"
+      ? imageEl.previousElementSibling
+      : imageEl?.parentElement?.querySelector("source");
+    if (imageEl && sourceEl && imagePath) {
+      imageEl.src = imagePath;
+      sourceEl.srcset = imagePath;
+    }
+    optionBtns[0].classList.add("_active")
     moveIndicator(optionBtns[0], indicatorOption);
   }
 
@@ -116,7 +143,6 @@ closeBtn?.addEventListener('click', () => {
 // });
 
 
-
 const accordionTrigger = document.querySelectorAll('.faq__trigger');
 
 const openAccordion = (e) => {
@@ -127,3 +153,25 @@ const openAccordion = (e) => {
 accordionTrigger?.forEach(trigger => {
   trigger.addEventListener('click', openAccordion)
 })
+
+const currentYear = new Date().getFullYear();
+const yearElement = document.getElementById("year");
+if (yearElement) {
+  yearElement.innerText = currentYear;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Проверяем, установлены ли куки
+  if (!document.cookie.split('; ').find(row => row.startsWith('cookie_consent='))) {
+    // Если куки не установлены, показываем уведомление
+    document.getElementById('cookie-notice').style.display = 'flex';
+  }
+
+  // Обработчик для кнопки согласия
+  document.getElementById('accept-cookies').addEventListener('click', function () {
+    // Устанавливаем куки на 1 год
+    document.cookie = "cookie_consent=true; max-age=" + 60 * 60 * 24 * 365 + "; path=/";
+    // Скрываем уведомление
+    document.getElementById('cookie-notice').style.display = 'none';
+  });
+});

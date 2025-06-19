@@ -31,7 +31,7 @@ body._lock::after {
   visibility: hidden;
   pointer-events: none;
 
-  .close{
+  .close {
     top: 0;
   }
 }
@@ -96,7 +96,7 @@ body._lock::after {
   margin-bottom: 24px;
   text-align: center;
   color: rgba($color: #000000, $alpha: 1.0);
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 300;
   line-height: 150%;
 }
@@ -131,7 +131,7 @@ body._lock::after {
   }
 }
 
-.popup__contact{
+.popup__contact {
   height: calc(100vh - 100px);
   overflow-y: auto;
 
@@ -164,4 +164,38 @@ body._lock::after {
   * {
     -ms-overflow-style: auto;
   }
+}
+
+.cookie-notice {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 70%;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: $main;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 1000;
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  a {
+    color: $accent;
+    text-decoration: underline;
+  }
+}
+
+.accept-cookies {
+  width: 200px;
+  padding: 10px 20px;
+  background-color: $accent;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }

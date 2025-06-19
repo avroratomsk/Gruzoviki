@@ -13,16 +13,16 @@
   <title>Сборка GULP</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250618104026"
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250619180025"
         rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css?_v=20250618104026"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css?_v=20250619180025"/>
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250618104026"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250619180025"
   />
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20250618104026"
+    href="css/style.min.css?_v=20250619180025"
   />
 
   <!-- https://realfavicongenerator.net -->
@@ -395,11 +395,27 @@
           <p>Можно ли приобрести автомобиль в кредит?</p>
         </div>
         <div class="faq__content">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eos facilis fuga nesciunt quibusdam tenetur,
-            veritatis voluptate! Ad atque aut blanditiis doloremque, dolores ducimus eaque quam quibusdam repudiandae
-            voluptatibus voluptatum.
-          </p>
+          <p>Программа действует в банках-партнерах для определенных кредитных продуктов: АО «ТБанк», (Универсальная
+            лицензия ЦБ РФ на осуществление банковских операций № 2673 от 09 июля 2024 года), кредитный продукт Соллерс
+            ПРО со ставкой 25,5% годовых.</p>
+          <p>Требования банка к заемщику:</p>
+          <ul>
+            <li>Гражданство РФ</li>
+            <li>Регистрация и постоянное проживание в регионе присутствия Росбанк Авто</li>
+          </ul>
+          <p>Возраст заемщика:</p>
+          <ul>
+            <li>от 23 до 70 лет (срок окончания действия договора потребительского кредита не должен наступить позже дня
+              70-летия заемщика)
+            </li>
+            <li>Официальное трудоустройство на территории РФ</li>
+            <li>Непрерывный трудовой стаж на последнем месте работы — не менее 3 месяцев (при оформлении кредита на
+              новый автомобиль Sollers)
+            </li>
+            <li>Предоставление не менее 2 контактных телефонов</li>
+            <li>Ограничение по сумме кредита: максимальная сумма 12 000 000 руб.</li>
+          </ul>
+          <p></p>
         </div>
       </div>
       <div class="faq__item">
@@ -509,7 +525,7 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <div class="footer__copyright">© 2025 ООО "Sollers"</div>
+      <div class="footer__copyright">© <span id="year">2025</span> ООО "Sollers"</div>
       <div class="footer__author">
         Сайт разработан - <a href="">РА Аврора</a>
       </div>
@@ -528,12 +544,57 @@
       <form action="" class="popup__form form" method="POST" id="callback-form">
         <input type="text" name="name" class="form__inp" placeholder="Ваше имя" required/>
         <input type="tel" name="phone" class="form__inp" placeholder="номер телефона" required data-tel-input/>
+        <div class="form__row">
+            <input type="checkbox" name="agreement" class="form" id="agreement">
+            <label for="agreement" class="form__label">Я согласен(а) с <a href="" target="_blank">политиккой конфиденциальности</a></label>
+        </div>
+        <div class="form__row">
+
+        </div>
         <button type="submit" class="form__submit">Отправить</button>
       </form>
     </div>
   </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250618104026"></script>
-<script src="js/app.min.js?_v=20250618104026"></script>
+
+<div id="diller" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__top">
+        <button data-close type="button" class="popup__close close"></button>
+      </div>
+      <h2 class="popup__title">Связаться с диллером</h2>
+      <form action="" class="popup__form form" method="POST" id="callback-form">
+        <input type="text" name="name" class="form__inp" placeholder="Ваше имя" required/>
+        <input type="tel" name="phone" class="form__inp" placeholder="номер телефона" required data-tel-input/>
+
+        <button type="submit" class="form__submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="cookie-notice" class="cookie-notice">
+  <div>
+    <p>
+      Мы используем cookie и сервис обработки персональных данных посредством метрической программы
+    </p>
+    <p>
+      <a href="https://yandex.ru/legal/metrica_termsofuse/ru/" target="_blank">«Яндекс.Метрика».</a>.
+      Это позволяет нам анализировать взаимодействие посетителей с сайтом и делать его лучше.
+    </p>
+    <p>
+      Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов
+      <a href="[[~23]]" target="_blank">cookie</a> и
+      <a href="[[~22]]" target="_blank">
+        политикой конфиденциальности
+      </a>.
+    </p>
+  </div>
+
+  <button type="button" id="accept-cookies" class="accept-cookies">Я согласен</button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250619180025"></script>
+<script src="js/app.min.js?_v=20250619180025"></script>
 </body>
 </html>

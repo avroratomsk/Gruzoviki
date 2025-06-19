@@ -16,6 +16,18 @@
     }
   }
 
+  //.form__row
+  &__row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .form__label {
+      font-size: 14px;
+    }
+  }
+
   //.form__group
   &__group {
     width: 100%;
