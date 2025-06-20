@@ -1809,6 +1809,14 @@ template {
   line-height: 140%;
 }
 
+.callback__form .form__row-label {
+  color: #ffffff;
+}
+
+.callback__form .form__row-label a {
+  color: #ffffff;
+}
+
 .callback__image {
   position: relative;
   width: 100%;
@@ -3236,8 +3244,17 @@ body._lock::after {
   gap: 10px;
 }
 
-.form__row .form__label {
+.form__row input[type=checkbox] {
+  margin-bottom: 0px;
+}
+
+.form__row-label {
   font-size: 14px;
+}
+
+.form__row-label a {
+  color: #F47C30;
+  text-decoration: underline;
 }
 
 .form__group {

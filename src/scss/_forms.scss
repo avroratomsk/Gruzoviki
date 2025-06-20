@@ -23,10 +23,21 @@
     align-items: center;
     gap: 10px;
 
-    .form__label {
-      font-size: 14px;
+    input[type="checkbox"] {
+      margin-bottom: 0px;
     }
   }
+
+  //.form__row-label
+  &__row-label {
+    font-size: 14px;
+
+    a {
+      color: $accent;
+      text-decoration: underline;
+    }
+  }
+
 
   //.form__group
   &__group {

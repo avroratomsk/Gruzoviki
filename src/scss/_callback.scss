@@ -40,6 +40,14 @@
 
   //.callback__form
   &__form {
+
+    .form__row-label {
+      color: #ffffff;
+
+      a {
+        color: #ffffff;
+      }
+    }
   }
 
   //.callback__image
