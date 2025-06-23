@@ -199,7 +199,10 @@
   }
 
   a {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #ffffff;
     padding: 3px;
     transition: $animation_speed;
 

@@ -13,16 +13,16 @@
   <title>Сборка GULP</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250620145956"
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250623144633"
         rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css?_v=20250620145956"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css?_v=20250623144633"/>
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250620145956"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250623144633"
   />
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20250620145956"
+    href="css/style.min.css?_v=20250623144633"
   />
 
   <!-- https://realfavicongenerator.net -->
@@ -64,7 +64,7 @@
         <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
       </a>
       <nav class="header__nav nav">
-<!--        <button type="button" class="close"><i class="fa-solid fa-xmark"></i></button>-->
+        <!--        <button type="button" class="close"><i class="fa-solid fa-xmark"></i></button>-->
         <ul class="nav__list">
           <li class="nav__item">
             <a href="" class="nav__link">Каталог</a>
@@ -81,20 +81,27 @@
 
       </nav>
       <div class="header__actions">
-        <div class="header__socials socials">
-          <a href=""><picture><source srcset="img/wh.webp" type="image/webp"><img src="img/wh.png" alt=""></picture></a>
-          <a href=""><picture><source srcset="img/vk.webp" type="image/webp"><img src="img/vk.png" alt=""></picture></a>
-          <a href=""><picture><source srcset="img/tg.webp" type="image/webp"><img src="img/tg.png" alt=""></picture></a>
-        </div>
-        <div class="header__info">
-          <button type="button" class="header__search-btn"><picture><source srcset="img/search.webp" type="image/webp"><img src="img/search.png" alt=""></picture></button>
-        </div>
+        <!--        <div class="header__socials socials">-->
+        <!--          <a href=""><picture><source srcset="img/wh.webp" type="image/webp"><img src="img/wh.png" alt=""></picture></a>-->
+        <!--          <a href=""><picture><source srcset="img/vk.webp" type="image/webp"><img src="img/vk.png" alt=""></picture></a>-->
+        <!--          <a href=""><picture><source srcset="img/tg.webp" type="image/webp"><img src="img/tg.png" alt=""></picture></a>-->
+        <!--        </div>-->
+        <!--        <div class="header__info">-->
+        <!--          <button type="button" class="header__search-btn"><picture><source srcset="img/search.webp" type="image/webp"><img src="img/search.png" alt=""></picture></button>-->
+        <!--        </div>-->
         <div class="header__text">
-          <p class=""><span>Адрес:</span><span>г.Владивосток, ул. Выселковая, д.30, стр.10</span></p>
-          <p class=""><span>Телефон:</span><a href="">+7 (984) 199-20-99 <picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt=""></picture></a></p>
-          <p class=""><span>E-mail:</span><a href="">isuzu-dv@mail.ru <picture><source srcset="img/mail.webp" type="image/webp"><img src="img/mail.png" alt=""></picture></a></p>
+
+          <div class="header__socials socials">
+            <p class=""><i class="fa-solid fa-location-dot"></i><span>г.Владивосток</span></p>
+            <p class=""><a href="tel:+7 (984) 199-20-99"><picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt=""></picture></a></p>
+            <p class=""><a href="mailto:isuzu-dv@mail.ru"><picture><source srcset="img/mail.webp" type="image/webp"><img src="img/mail.png" alt=""></picture></a></p>
+          </div>
+          <!--          <p class=""><span>Телефон:</span><a href="">+7 (984) 199-20-99 <picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt=""></picture></a></p>-->
+          <!--          <p class=""><span>E-mail:</span><a href="">isuzu-dv@mail.ru <picture><source srcset="img/mail.webp" type="image/webp"><img src="img/mail.png" alt=""></picture></a></p>-->
         </div>
+        <a href="obratnaya-svyaz" class="index-slider__btn btn">Обратная связь</a>
       </div>
+
       <button type="button" class="burger"><i class="fa-solid fa-bars-staggered"></i></button>
     </div>
   </div>
@@ -230,9 +237,10 @@
               <p>E-mail: <a href="">gruzoviki@sollers.ru</a></p>
             </div>
             <div class="socials">
-              <a href=""><picture><source srcset="img/wh.webp" type="image/webp"><img src="img/wh.png" alt=""></picture></a>
-              <a href=""><picture><source srcset="img/vk.webp" type="image/webp"><img src="img/vk.png" alt=""></picture></a>
-              <a href=""><picture><source srcset="img/tg.webp" type="image/webp"><img src="img/tg.png" alt=""></picture></a>
+              <a href="">
+                <picture><source srcset="img/wh.webp" type="image/webp"><img src="img/wh.png" alt=""></picture>
+                <span>WhatsApp</span>
+              </a>
             </div>
           </div>
         </div>
@@ -248,7 +256,7 @@
   </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250620145956"></script>
-<script src="js/app.min.js?_v=20250620145956"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250623144633"></script>
+<script src="js/app.min.js?_v=20250623144633"></script>
 </body>
 </html>
