@@ -14,7 +14,7 @@ const openPopup = (e) => {
 
 const closePopup = (e) => {
   bodyUnLock();
-  document.querySelector(".popup_show").classList.remove("popup_show");
+  document.querySelector(".popup_show")?.classList.remove("popup_show");
 };
 
 document.addEventListener("keydown", (e) => {
